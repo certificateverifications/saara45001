@@ -22,8 +22,6 @@
       text-decoration: none;
       color: inherit;
     }
-
-    /* Top Bar */
     #header-top {
       background-color: #1a252f;
       color: #b0bec5;
@@ -57,8 +55,6 @@
       color: #00a8ff;
       margin-right: 5px;
     }
-
-    /* Main Header */
     #header {
       background: #ffffff;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
@@ -104,14 +100,10 @@
     }
     .navigation ul li a {
       color: #2c3e50;
-      transition: color 0.2s;
     }
-    .navigation ul li a:hover,
     .navigation ul li.active a {
       color: #0088cc;
     }
-
-    /* Breadcrumbs */
     .breadcrumbs {
       background: #e9ecef;
       padding: 16px 0;
@@ -123,8 +115,6 @@
       color: #212529;
       font-weight: 600;
     }
-
-    /* Content Area */
     .sections {
       padding-bottom: 50px;
     }
@@ -138,8 +128,6 @@
         grid-template-columns: 1fr;
       }
     }
-
-    /* Verification Box */
     .verification-card {
       background: #ffffff;
       border: 1px solid #e1e7ec;
@@ -155,10 +143,7 @@
       margin-bottom: 20px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
-
-    /* Table Styling matching Saara original */
     .cert-table {
       width: 100%;
       border-collapse: collapse;
@@ -178,4 +163,264 @@
     .cert-table td.val-col {
       width: 62%;
       color: #444444;
-      font-weight: 5
+      font-weight: 500;
+    }
+    .company-title-row td {
+      padding: 15px 12px;
+      background: #f8fafc;
+      border-bottom: 2px solid #0088cc;
+    }
+    .company-name-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: #003366;
+      text-transform: uppercase;
+    }
+    .status-badge {
+      display: inline-block;
+      background-color: #28a745;
+      color: #ffffff;
+      padding: 4px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .sidebar-widget {
+      background: #ffffff;
+      border: 1px solid #e1e7ec;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .sidebar-widget h6 {
+      font-size: 16px;
+      color: #004b91;
+      border-bottom: 2px solid #0088cc;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    .accred-logo-box {
+      text-align: center;
+      padding: 15px 10px;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 4px;
+    }
+    .accred-logo-box p {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 8px;
+    }
+    #footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 40px 0 20px 0;
+      margin-top: 40px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #334155;
+    }
+    .footer-widget h6 {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 18px;
+      font-weight: 600;
+      border-left: 3px solid #0088cc;
+      padding-left: 10px;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    #footer-bottom {
+      background: #0f172a;
+      padding: 18px 0;
+      color: #94a3b8;
+      font-size: 12.5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header-top">
+    <div class="container top-flex">
+      <div class="top-left">
+        <span><i class="fa fa-phone"></i> +919810128532</span>
+        <span><i class="fa fa-envelope"></i> info@saaracertification.com</span>
+        <span><i class="fa fa-globe"></i> International Presence</span>
+      </div>
+      <div>
+        <span>Global ISO Assessment & Certification</span>
+      </div>
+    </div>
+  </header>
+
+  <header id="header">
+    <div class="container header-nav">
+      <div class="logo-container">
+        <img src="Saara Global Management Seal.png" alt="Saara Management System" class="logo-img">
+        <div class="logo-text-group">
+          <h2>SAARA MANAGEMENT SYSTEM</h2>
+          <p>Certification & Inspection Body</p>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Accreditation</a></li>
+          <li><a href="#">ISO Certification</a></li>
+          <li class="active"><a href="#">Certificate Status</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <h4>Certificate Status Verification</h4>
+    </div>
+  </div>
+
+  <div class="sections">
+    <div class="container">
+      <div class="main-grid">
+
+        <div class="verification-card">
+          <h6>Certified Organisation Details</h6>
+
+          <table class="cert-table">
+            <tbody>
+              <tr class="company-title-row">
+                <td colspan="2">
+                  <span class="company-name-text" id="company-name">HI TECH HRMS (PRIVATE) LIMITED</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="label-col">Certificate Number :</td>
+                <td class="val-col"><strong id="cert-no" style="color: #003366; font-size: 15px;">HT/OHSMS/A54/QA067</strong></td>
+              </tr>
+              <tr>
+                <td class="label-col">Scope :</td>
+                <td class="val-col" id="cert-scope" style="line-height: 1.6; text-align: justify;">
+                  Provision of occupational health and safety management in the delivery of end-to-end human resource outsourcing, total workforce solutions, and recruitment &amp; deployment of skilled, semi-skilled, and unskilled manpower; execution of professional commercial, residential, and industrial janitorial services and integrated facility care; and the safe handling, storage, distribution, and supply of specialized cleaning chemicals, materials, consumables, and allied hygiene equipment.
+                </td>
+              </tr>
+              <tr>
+                <td class="label-col">Address :</td>
+                <td class="val-col" id="cert-address">
+                  Office no. 402, 4th floor, Rock Trade Center, Bagh-e-zehra Street, Opposite Jillani Tower, Karachi - Pakistan
+                </td>
+              </tr>
+              <tr>
+                <td class="label-col">Certification Standard :</td>
+                <td class="val-col"><strong id="standard-val">ISO 45001:2018</strong></td>
+              </tr>
+              <tr>
+                <td class="label-col">Initial Registration Date :</td>
+                <td class="val-col" id="reg-date">17-11-2025</td>
+              </tr>
+              <tr>
+                <td class="label-col">Issue Date :</td>
+                <td class="val-col" id="issue-date">30-04-2026</td>
+              </tr>
+              <tr>
+                <td class="label-col">Surveillance-1 :</td>
+                <td class="val-col" id="surv-1"><strong style="color: #28a745;">DONE</strong></td>
+              </tr>
+              <tr>
+                <td class="label-col">Surveillance-2 :</td>
+                <td class="val-col" id="surv-2">18-07-2026</td>
+              </tr>
+              <tr>
+                <td class="label-col">Recertification Due on :</td>
+                <td class="val-col" id="recert-date">18-07-2026</td>
+              </tr>
+              <tr>
+                <td class="label-col">Expiry Date :</td>
+                <td class="val-col"><strong id="expiry-date">16-11-2027</strong></td>
+              </tr>
+              <tr>
+                <td class="label-col">Status :</td>
+                <td class="val-col">
+                  <span class="status-badge" id="cert-status">Active</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <div class="sidebar-widget">
+            <h6>Accreditation Board</h6>
+            <div class="accred-logo-box">
+              <strong style="color: #003366; font-size: 15px;">UAF / IAF Multilateral Recognition</strong>
+              <p>Accredited by United Accreditation Foundation (UAF), USA.<br>Accreditation No: CB-MS-3501</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-widget">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>ISO Certification</li>
+          <li>Certificate Status</li>
+        </ul>
+      </div>
+      <div class="footer-widget">
+        <h6>Contact Us</h6>
+        <p><i class="fa fa-envelope"></i> info@saaracertification.com</p>
+        <p><i class="fa fa-phone"></i> +919810128532</p>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="footer-bottom">
+    <div class="container">
+      Copyright &copy; Saara Management System Private Limited. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramMap = {
+      'cert': 'cert-no',
+      'company': 'company-name',
+      'scope': 'cert-scope',
+      'address': 'cert-address',
+      'standard': 'standard-val',
+      'reg': 'reg-date',
+      'issue': 'issue-date',
+      'surv1': 'surv-1',
+      'surv2': 'surv-2',
+      'recert': 'recert-date',
+      'expiry': 'expiry-date',
+      'status': 'cert-status'
+    };
+    for (const [param, elementId] of Object.entries(paramMap)) {
+      if (urlParams.has(param)) {
+        const el = document.getElementById(elementId);
+        if (el) el.textContent = urlParams.get(param);
+      }
+    }
+  </script>
+</body>
+</html>
